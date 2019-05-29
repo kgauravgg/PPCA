@@ -1,0 +1,343 @@
+@media(max-width: 576px){
+	.heading{
+		align-items: flex-end !important;
+		margin-bottom: 5%;
+	}
+}
+
+body, html{
+	margin:0;
+	font-family: Arial,Helvatica,sans-serif;
+	height: 100%;
+}
+
+.cover{
+	background-size: cover;
+	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url("../img/background.jpg") no-repeat fixed center;
+	height: 100%;
+	overflow: hidden;
+}
+.banner-wrapper{
+	display: flex;
+	height: 100%;
+	text-align: center;
+	align-items: center;
+}
+
+.banner{
+	width: 100%;
+	color: white;
+	font-size: 60px;
+	font-family: "Segoe UI";
+	font-weight: lighter;
+}
+.about{
+	margin: 5% 10%;
+	text-align: justify;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+.cover{
+    
+}
+.image{
+	height: 100%;
+	background: url("img/pic.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 100%;
+	display: flex;
+
+}
+.heading{
+	:font-family: ;
+	color: white;
+	margin-left: 10%;
+	align-items: center;
+	display: flex;
+}
+.button {
+	  background-color: #4CAF50; /* Green */
+	  border: none;
+	  color: white;
+	  margin-top: 5px;
+	  padding: 10px 25px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 20px;
+	  border-radius: 5px;
+}
+.footer{
+	width: 100%;
+	color: white;
+	text-align: center;
+	background-color: #0f1518;
+}
+.footer2{
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	background-color: black;
+}
+.footer-top{
+	padding-bottom: 10px;
+}
+
+.footer-section{
+	padding: 10px 0 0 0;
+}
+
+
+#facebook:hover, #facebook:hover a{
+	background-color: #4267b2;
+	color: white !important;
+	text-decoration: none;
+}
+#twitter:hover, #twitter:hover a{
+	background-color: #1da1f2;
+	color: white;
+}
+
+#instagram:hover, #instagram:hover a{
+	background:linear-gradient(#635ccb,#d03890,#fecb66);
+	color: white;
+}
+
+#youtube:hover, #youtube:hover a{
+	background-color: #ff0000;
+	color: #fff;
+
+}
+
+
+.social{
+	text-align: center;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;			
+}
+
+ul a{
+	text-decoration: none;
+
+}
+
+li{
+	display: inline-flex;
+	margin: 5px;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	background-color: #fff;
+	color: #000;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+li a{
+	color: #000;	
+}
+
+.container2{
+
+	border:2px dashed white;
+	border-radius: 5px;
+	margin-top: ;
+	margin-bottom:;
+	color: white;
+}
+.container2 i{
+	font-size: 24px;
+}
+.container2 a{
+	text-decoration: none;
+	color: white;
+}
+.container2 a:active{
+	text-decoration: none;
+	color: white;
+}
+.container2 a:hover{
+	
+	color:orange;
+}
+.container2 a:visited{
+	text-decoration: none;
+	color: white;
+}
+.content{
+	max-width: 300px;
+	width: auto;
+	height: 300px;
+	margin: auto;
+	box-shadow: 1px 1px 5px 2px #333;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.notice{
+	background: brown;
+	color: white;
+	padding: 5px 5px;
+}
+.moving-body{
+	padding:4px;
+	width: 100%;
+	height: 300px;
+}
+.recent-content{
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	margin: auto;
+	box-shadow: 1px 1px 5px 2px #333;
+	border-radius: 5px;
+	overflow: hidden;
+	
+}
+.recent-achivment{
+	background: brown;
+	color: white;
+	padding: 5px 5px;
+	margin: 0px;
+}
+.moving-image{
+	padding:4px;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.slider {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 5px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: 1;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.vid-box{
+	display: block;
+	margin-top: none;
+	margin-left: auto;
+	margin-right: auto;
+    width: 50%;
+  	box-shadow: 1px 1px 5px 2px #333;
+  	padding: 5px;
+  	border-radius: 5px;
+}
+.success-story{
+	padding-top: 20px;
+}
+
+.success-story h3{
+	margin-bottom: 30px;
+	margin-left: 10px;
+}
+
+.success-item img{
+	height: 200px !important;
+	width: 200px !important;
+	border-radius: 100px;
+}
+
+.success-item p{
+	text-align: justify;
+}
+
+.story-text{
+	padding-left: 20px;
+	display: table;
+	height: 200px;
+}
+
+.story{
+	display: table-cell;
+	vertical-align: middle;
+}
