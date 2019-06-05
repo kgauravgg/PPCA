@@ -11,6 +11,44 @@ body, html{
 	height: 100%;
 }
 
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 .cover{
 	background-size: cover;
 	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url("../img/background.jpg") no-repeat fixed center;
@@ -71,8 +109,8 @@ a:active {
 	align-items: center;
 	display: flex;
 }
-.button {
-	  background-color: #4CAF50; /* Green */
+/*.button {
+	  background-color: #4CAF50; Green 
 	  border: none;
 	  color: white;
 	  margin-top: 5px;
@@ -82,7 +120,7 @@ a:active {
 	  display: inline-block;
 	  font-size: 20px;
 	  border-radius: 5px;
-}
+}*/
 .footer{
 	width: 100%;
 	color: white;
