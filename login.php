@@ -11,13 +11,19 @@
 		$data = $stmnt->fetchAll();
 		if(count($data)>0)
 		{
-			header("Location:/maintain.php");
+			session_start();
+			$_SESSION["username"]=$username;
+		    header("Location:maintain.php");
+		}
 		else
 		{
-			echo "failed to login";
+			include 'index.php';
+			echo "<script>alert('Your UserID or Password is not correct')</script>";
+	
 		}
 	}
 	else{
-		echo "Error executng query!";
+		echo "<script>alert('Something is wrong. Please contact to PPCL admin')</script>";
+        header("Location:index.php");
 	}
 ?>
