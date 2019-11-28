@@ -1,0 +1,154 @@
+@media(max-width: 576px){
+  .heading{
+    align-items: flex-end !important;
+    margin-bottom: 5%;
+  }
+}
+
+body, html{
+  margin:0;
+  font-family: Arial,Helvatica,sans-serif;
+  height: 100%;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 3px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.cover{
+  background-size: cover;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url("../img/background.jpg") no-repeat fixed center;
+  height: 100%;
+  overflow: hidden;
+}
+.banner-wrapper{
+  display: flex;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.banner{
+  width: 100%;
+  color: white;
+  font-size: 60px;
+  font-family: "Segoe UI";
+  font-weight: lighter;
+}
+.footer2{
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  background-color: black;
+}
+.footer{
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #0f1518;
+}
+.footer-top{
+  padding-bottom: 10px;
+}
+
+.footer-section{
+  padding: 10px 0 0 0;
+}
+
+
+#facebook:hover, #facebook:hover a{
+  background-color: #4267b2;
+  color: white !important;
+  text-decoration: none;
+}
+#twitter:hover, #twitter:hover a{
+  background-color: #1da1f2;
+  color: white;
+}
+
+#instagram:hover, #instagram:hover a{
+  background:linear-gradient(#635ccb,#d03890,#fecb66);
+  color: white;
+}
+
+#youtube:hover, #youtube:hover a{
+  background-color: #ff0000;
+  color: #fff;
+}
+#location:hover, #location:hover a{
+    background: #28abe3;
+    color: #fff;
+}
+
+
+.social{
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;     
+}
+
+ul a{
+  text-decoration: none;
+
+}
+
+li{
+  display: inline-flex;
+  margin: 5px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+li a{
+  color: #000;  
+}
+.about{
+  margin: 5% 10%;
+  text-align: justify;
+}

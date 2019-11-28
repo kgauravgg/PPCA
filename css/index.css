@@ -17,12 +17,12 @@ body, html{
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 18px;
-  padding: 5px;
+  font-size: 16px;
+  padding: 3px;
   width: 100px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 3px;
 }
 
 .button span {
@@ -161,7 +161,10 @@ a:active {
 #youtube:hover, #youtube:hover a{
 	background-color: #ff0000;
 	color: #fff;
-
+}
+#location:hover, #location:hover a{
+    background: #28abe3;
+    color: #fff;
 }
 
 
@@ -202,8 +205,6 @@ li a{
 
 	border:2px dashed white;
 	border-radius: 5px;
-	margin-top: ;
-	margin-bottom:;
 	color: white;
 }
 .container2 i{
@@ -254,7 +255,7 @@ li a{
 	overflow: hidden;
 	
 }
-.recent-achivment{
+.recent-achievement{
 	background: brown;
 	color: white;
 	padding: 5px 5px;
@@ -266,86 +267,23 @@ li a{
 	width: auto;
 	height: auto;
 }
-.flip-card {
-  background-color: transparent;
-  width: 200px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-/* Style the back side */
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
+.moving-sponsor{
+    padding:4px;
+    width: 100%;
+    alignment: centers;
 }
 .slider {
     width: 80%;
     margin: 100px auto;
 }
 
-.slick-slide {
-  margin: 0px 5px;
-}
-
-.slick-slide img {
-  width: 100%;
-  height: auto;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: 1;
-}
-
-.slick-active {
-  opacity: 1;
-}
-
-.slick-current {
-  opacity: 1;
-}
 
 .vid-box{
 	display: block;
-	margin-top: none;
 	margin-left: auto;
 	margin-right: auto;
     width: 50%;
+    height: auto;
   	box-shadow: 1px 1px 5px 2px #333;
   	padding: 5px;
   	border-radius: 5px;
@@ -378,4 +316,25 @@ li a{
 .story{
 	display: table-cell;
 	vertical-align: middle;
+}
+.success-story-box{
+	margin: 5% 10% ;
+	width: 80%;
+	box-shadow: 1px 1px 5px 2px #333;
+	padding: 5px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 150px;
+	height: 60px;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+	padding: 2px 2px;
 }
